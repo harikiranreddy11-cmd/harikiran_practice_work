@@ -3,45 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pipeline Quality Gate Test</title>
+    <title>Pipeline Test Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
+            font-family: sans-serif;
+            background: #eef2f3;
             text-align: center;
+            padding: 50px;
+        }
+        .card {
             background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .status-badge {
+            padding: 30px;
+            border-radius: 10px;
             display: inline-block;
-            padding: 8px 16px;
-            background-color: #2ecc71;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { color: #0052cc; }
+        .badge {
+            background: #36b37e;
             color: white;
-            border-radius: 20px;
+            padding: 5px 12px;
+            border-radius: 4px;
             font-weight: bold;
-            margin-top: 15px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>CI/CD Pipeline Test</h1>
-        <p>This static file is utilized to verify successful Git Checkout, SonarQube Scan metrics, and stable Docker image assembly builds.</p>
-        <div class="status-badge">Code Base: Active</div>
+    <div class="card">
+        <h1>Deployment Test</h1>
+        <p>If you can see this page, your CI/CD automation pipeline is working perfectly!</p>
+        <span class="badge">Success</span>
     </div>
 
 </body>
